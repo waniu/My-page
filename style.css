@@ -1,0 +1,52 @@
+body
+{
+    background-color: #152030;
+	font-size: 20px;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: #eee;
+}
+
+#logo
+{
+    width: 100%;
+    background-color: #222222;
+    text-align: center;
+    font-size: 70px;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    border: 1px solid #000;
+    text-shadow: 
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000;
+}
+
+#topbar
+{
+    width: 100%;
+}
+
+.menu
+{
+    float: left;
+    margin-left: 15px;
+    text-align: center;
+}
+
+#container
+{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #222222;
+    height: 800px;
+    margin-top: 0;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+
