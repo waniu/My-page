@@ -1,4 +1,9 @@
-/* verison 1.0 */
+/* verison 1.1 */
+
+
+/*//////////////////////////////////
+----------For all subsites----------
+//////////////////////////////////*/
 
 body
 {
@@ -95,6 +100,17 @@ a.logo
     margin-bottom: 20px;
     border-bottom: 1px solid #999;
     padding: 10px;
+    text-align: left;
+}
+
+.title
+{
+    text-align: left;
+}
+
+.post_content
+{
+    text-align: justify;
 }
 
 .list_link:hover
@@ -106,17 +122,23 @@ a.logo
 #content
 {
     width: 900px;
-    text-align: justify;
     color: black;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
 }
 
+
+
 a.list_link
 {
     color: white;
     text-decoration: none;  
+}
+
+a.contact_link
+{
+    color: blue;
 }
 
 #footer
@@ -132,4 +154,54 @@ a.list_link
     margin-bottom: 15px;
     padding-top: 10px;
     text-align: right;
+}
+
+/*//////////////////////////////////
+---------------O mnie---------------
+//////////////////////////////////*/
+
+#about_me
+{
+    float: left;
+    margin-right: 15px;
+    height: 475px;
+    width: 385px;
+    text-align: left;
+}
+
+#multimedia
+{
+    height: 475px;
+    width: 500px;
+    float: left;
+}
+
+#story
+{
+    border-top: 1px solid #999;
+    text-align: justify; 
+    width: 900px;
+}
+
+/*//////////////////////////////////
+--------------Projekty--------------
+//////////////////////////////////*/
+
+.type
+{
+    text-align: left;
+}
+
+.category
+{
+    text-align: justify;
+}
+
+/*//////////////////////////////////
+--------Skąd czerpię wiedzę---------
+//////////////////////////////////*/
+
+.source
+{
+    text-align: left;
 }
