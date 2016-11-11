@@ -1,4 +1,4 @@
-<!-- version 1.3 --> 
+<!-- version 1.4 --> 
 
 <!DOCUMENT HTML>
 <html lang="pl">
@@ -6,11 +6,14 @@
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1"/>
-    <meta name="description" content="Witaj na mojej stronie o programowaniu. Dowiesz się tutaj kim jestem oraz czego, jak i skąd się uczyłem. Zapraszam =)"/>
-    <meta name="keywords" content="jakub, wanowski, testowanie, oprogramowania, projekty , nauka, programowania, programista, programowanie, web, development, C++, HTML, CSS, JavaScript, PHP, MySQL, Wrocław, książki"/>
     
+    <meta name="description" content="Jesteś początkującym programistą? Nie wiemsz jak zacząć ani skąd czerpać wiedzę? Wejdź na mój programistyczny dziennik i zobacz jak zaczynałem =)"/>
     
-    <title>Jakub Wanowski</title>
+    <meta name="keywords" content="jakub, wanowski, programowanie, projekty , nauka, programowania, programista, web, development, C++, HTML, CSS, JavaScript, PHP, MySQL"/>
+    
+    <meta name="author" content="Jakub Wanowski"/>
+    
+    <title>O mnie</title>
     
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" type="text/css"/>
@@ -36,86 +39,92 @@
     
 </head>
     
-<body onload="odliczanie()">
+<body>
     <div id="container">
-        <div id="timer"></div>
-        <div id="topbar">
-            <div id="actions">
-                <div id="logo">
-                    <a href="index.html" class="logo">Jakub Wanowski</a>
-                </div>
-                
-                <div id="menu">
-                    <div class="menu_button">
-                        <a href="index.html" class="list_link">Strona główna</a>
+        <div id="top">
+            <div id="timer"></div>
+            <div id="topbar">
+                <div id="actions">
+                    <div id="logo">
+                        <a href="index.html" class="logo">JakubWanowski.<span style="color: orange; text-shadow: 1px 1px 0 #333, -1px 1px 0 #333, -1px -1px 0 #333, 1px -1px 0 #333;">pl</span></a>
                     </div>
-                    
-                    <div class="menu_button">
-                        <a href="omnie.html" class="list_link">O mnie</a>
-                    </div>    
-                    
-                    <div class="menu_button">
-                        <a href="projekty.html" class="list_link">Projekty</a>
-                    </div>    
-                    
-                    <div class="menu_button">
-                        <a href="wiedza.html" class="list_link">Skąd czerpię wiedzę</a>
-                    </div>    
-                    
-                    <div class="menu_button" style="border: 0;">
-                        <a href="kontakt.html" class="list_link">Kontakt</a>
-                    </div> 
-                    
-                    <div style="clear: both;"/>    
-                </div>
-            </div>    
-        </div>
-        <div id="content">
-            <div class="header">O mnie</div>
-            <div id="about_me" style="text-align: left;">
-                <h3>Podstawowe dane</h3>
-                
-                    Imię: Jakub<br/>
-                    Nazwisko: Wanowski<br/>
-                    Miejsce zamieszkania: Wrocław<br/>
-                    Rocznik: 1990<br/>
-                    Tytuł zawodowy: inżynier budownictwa<br/><br/>
-                    Wykształcenie:<br/>
-                    - Konstrukcje Budowlane<br/>
-                      Politechnika Wrocławska<br/>
-                      2014 - obecnie<br/><br/>
-                    - Budownictwo<br/>
-                      Uniwersytet Przyrodniczy we Wrocławiu<br/>
-                      2009 - 2014          
-            </div>
 
-            <div id="multimedia">
-                <img src="img/img02.jpg"/>
-            </div>
-            
-            <div style="clear: both; margin-top: 30px;"/>
-            
-            <div id="story">
-                <h3>Moja historia</h3>
-                
-                <p>Jeśli dotarłeś tutaj to rozsiądź się wygodnie i słuchaj</p>
-                
-                <p>Przez ostatnie kilka lat studiowałem budownictwo i pracowałem w biurze zajmującym się wykonywaniem rysunków technicznych prefabrykatów betonowych.</p>
-                
-                <p>Od zawsze lubiłe zagadki logiczne. Bardzo przypadł mi do gustu portal <a href="https://www.tdhack.com/">TDHack.com</a> Jest to miejsce, w którym rozwiązywałem zaszyfrowane hasła aby zyskiwać punkty. Po jakimś czasie jednak kategoria "kryptografia" przestała mi wystarczać. Były jeszcze dwie "Net" i "Software". Próbowałem obu i ilość rozwiązanych zadać była znikoma. Uświadomiłem sibie, że potrzebuję konkretnego zestawu umiejętności. Muszę wiedzieć jak są zbudowane programy i strony internetowe.<br/>
-                Tak zaczęła się zabawa.</p>
-                
-                <p>Programowanie uwiodło mnie bardzo szybko. Otwiera przed człowiekiem ocean możliwości. Jest sztuką dla umysłów ścisłych. Możesz usiąść rano przed pustą kartą a wieczorem mieć już coś co działa i daje satysfakcję.</p>
-                
-                <p>Obecnie poświęcam sporo czasu na przerabianie różnych tutoriali.<br/>
-                Na szczególną uwagę zasługuje tu kanał na YouTube Mirosława Zelenta <a href="https://www.youtube.com/user/MiroslawZelent">Pasja informatyki</a>. Jest to miejsce wręcz stworzone dla osób, które chcą zacząć swoją przygodę.</p>
-                
-                <p>Przepracowanie większości materiału dało mi wiedzę i zestaw umiejętności niezbędny do dalszej nauki. Obecnie wiem co mam robić aby iść dalej.</p>
-                
-                <p>Ta strona jest pierwszym większym projektem, który rozwijam samodzielnie ale na pewno nie ostatnim =)</p>
+                    <div id="menu">
+                        <div class="menu_button" style="width: 170px;">
+                            <a href="index.html" class="list_link">Strona główna</a>
+                        </div>
+
+                        <div class="menu_button" style="width: 90px;">
+                            <a href="omnie.html" class="list_link">O mnie</a>
+                        </div>    
+
+                        <div class="menu_button" style="width: 110px;">
+                            <a href="projekty.html" class="list_link">Projekty</a>
+                        </div>    
+
+                        <div class="menu_button" style="width: 210px;">
+                            <a href="wiedza.html" class="list_link">Skąd czerpię wiedzę</a>
+                        </div>    
+
+                        <div class="menu_button" style="width: 115px; border: 0;">
+                            <a href="kontakt.html" class="list_link">Kontakt</a>
+                        </div> 
+
+                        <div style="clear: both;"/>    
+                    </div>
+                </div>    
             </div>
         </div>
-        <div id="footer">Copyright <span style="font-size: 20px;">&copy;</span> 2016 by Jakub Wanowski</div>
+        <div id="middle">
+            <div id="content">
+                <div class="header">O mnie</div>
+                <div id="about_me" style="text-align: left;">
+                    <h3>Podstawowe dane</h3>
+
+                        Imię: Jakub<br/>
+                        Nazwisko: Wanowski<br/>
+                        Miejsce zamieszkania: Wrocław<br/>
+                        Rocznik: 1990<br/>
+                        Tytuł zawodowy: inżynier budownictwa<br/><br/>
+                        Wykształcenie:<br/>
+                        - Konstrukcje Budowlane<br/>
+                          Politechnika Wrocławska<br/>
+                          2014 - obecnie<br/><br/>
+                        - Budownictwo<br/>
+                          Uniwersytet Przyrodniczy we Wrocławiu<br/>
+                          2009 - 2014          
+                </div>
+
+                <div id="multimedia">
+                    <img src="img/img02.jpg"/>
+                </div>
+
+                <div style="clear: both; margin-top: 30px;"/>
+
+                <div id="story">
+                    <h3>Moja historia</h3>
+
+                    <p>Jeśli dotarłeś tutaj, to rozsiądź się wygodnie i słuchaj.</p>
+
+                    <p>Przez ostatnich kilka lat studiowałem budownictwo i pracowałem w biurze zajmującym się wykonywaniem rysunków technicznych prefabrykatów żelbetowych.</p>
+
+                    <p>Od zawsze lubiłem zagadki logiczne. Bardzo przypadł mi do gustu portal <a href="https://www.tdhack.com/" target="_blank">TDHack.com</a> Jest to miejsce, w którym rozwiązywałem zaszyfrowane hasła, aby zyskiwać punkty. Po jakimś czasie jednak kategoria "kryptografia" przestała mi wystarczać. Były jeszcze dwie "Net" i "Software". Próbowałem obu i ilość rozwiązanych zadać była znikoma. Uświadomiłem sibie, że potrzebuję konkretnego zestawu umiejętności. Muszę wiedzieć jak są zbudowane programy i strony internetowe.<br/>
+                    Tak zaczęła się zabawa.</p>
+
+                    <p>Programowanie uwiodło mnie bardzo szybko. Otwiera przed człowiekiem ocean możliwości. Jest sztuką dla umysłów ścisłych. Możesz usiąść rano przed pustą kartą a wieczorem mieć już coś, co działa i daje satysfakcję.</p>
+
+                    <p>Obecnie poświęcam sporo czasu na przerabianie różnych tutoriali.<br/>
+                    Na szczególną uwagę zasługuje tu kanał na YouTube Mirosława Zelenta <a href="https://www.youtube.com/user/MiroslawZelent" target="_blank">Pasja informatyki</a>. Jest to miejsce wręcz stworzone dla osób, które chcą zacząć swoją przygodę.</p>
+
+                    <p>Przepracowanie większości materiału dało mi wiedzę i umiejętności niezbędne do dalszej nauki. Obecnie wiem co mam robić, aby iść dalej.</p>
+
+                    <p>Ta strona jest pierwszym większym projektem, który rozwijam samodzielnie, ale na pewno nie ostatnim =)</p>
+                </div>
+            </div>
+        </div>        
+        <div id="bottom">
+            <div id="footer">Copyright <span style="font-size: 20px;">&copy;</span> 2016 by Jakub Wanowski</div>
+        </div>
     </div>
 </body>
     
