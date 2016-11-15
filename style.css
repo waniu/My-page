@@ -7,40 +7,49 @@
 
 body
 {
+    background-color: #FFF;
     margin: 0 !important;
     font-family: 'Roboto Mono', monospace;
-    background-color: #FFF;
 }
 
-#container
+.container
 {
+    width: 100%;
     min-width: 1150px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-#top
-{
-    height: 70px;
+.top
+{ 
+    left: 2.5%;
     width: 95%;
-    margin-top: 50px;
+    height: 72px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#timer
+.sticky
+{
+    min-width: 1092.5px;
+    position: fixed;
+    left: 2.5%;
+    top: 0; 
+    z-index: 100;
+}
+
+.timer
 {
     height: 18px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     text-align: right;
     font-family: 'Orbitron', sans-serif;
     font-size: 18px;
     letter-spacing: 1.5px;
-    color: black;   
+    color: black; 
+    background-color: white;
 }
 
-#topbar
+.topbar
 {
     height: 48px;
     background-color: #6699cc;
@@ -49,7 +58,7 @@ body
     text-align: center; 
 }
 
-#actions
+.actions
 {
     width: 1000px;
     height: 50px;
@@ -57,18 +66,19 @@ body
     margin-right: auto; 
 }
 
-#logo
+.logo
 {
     float: left;
+    height: 38px;
     width: 300px;
     font-size: 26px;
     font-weight: 400;
     font-family: 'Orbitron', sans-serif;
     color: black;
-    margin-top: 12px;
+    padding-top: 6px;
 }
 
-#logo:hover
+.logo:hover
 {
     cursor: pointer;
 }
@@ -79,7 +89,7 @@ a.logo
     color: black;
 }
 
-#menu
+.menu
 {
     width: 700px;
     margin-left: 300px;
@@ -102,11 +112,6 @@ a.logo
         1px -1px 0 #333;
 }
 
-#last_button
-{
-    border: 0 !important;
-}
-
 .list_link:hover
 {
     cursor: pointer;
@@ -120,6 +125,19 @@ a.list_link
     text-decoration: none;  
 }
 
+.middle
+{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.margin
+{
+    margin-top: 90px;
+}
+
 .header
 {
     font-size: 36px;
@@ -127,18 +145,16 @@ a.list_link
     border-bottom: 1px solid #999;
     padding: 10px;
     text-align: left;
+    font-weight: 700;
 }
 
-#content
-{
+.content
+{   min-height: 600px;
     width: 900px;
     color: black;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
 }
 
-#footer
+.bottom
 {
     width: 900px;
     height: 34px;
@@ -149,8 +165,18 @@ a.list_link
     margin-right: auto;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.footer
+{
     padding-top: 10px;
     text-align: right;
+}
+
+a.link
+{
+    color: blue;
+    text-decoration: none;
 }
 
 /*//////////////////////////////////
@@ -194,10 +220,20 @@ a.list_link
     height: 475px;
     width: 500px;
     float: left;
+    padding-bottom: 15px;
 }
 
 #story
 {
+    margin-top: 15px;
+    border-top: 1px solid #999;
+    text-align: justify; 
+    width: 900px;
+}
+
+#equip
+{
+    margin-top: 15px;
     border-top: 1px solid #999;
     text-align: justify; 
     width: 900px;
@@ -234,8 +270,3 @@ a.list_link
 /*//////////////////////////////////
 ---------------Kontakt--------------
 //////////////////////////////////*/
-
-a.contact_link
-{
-    color: blue;
-}

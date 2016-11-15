@@ -1,4 +1,4 @@
-<!-- version 1.4 --> 
+<!-- version 1.6 --> 
 
 <!DOCUMENT HTML>
 <html lang="pl">
@@ -40,16 +40,18 @@
 </head>
     
 <body>
-    <div id="container">
-        <div id="top">
-            <div id="timer"></div>
-            <div id="topbar">
-                <div id="actions">
-                    <div id="logo">
+    <div class="container">
+        <div style="height: 50px;"></div>
+        
+        <div class="top">
+            <div class="timer" id="timer"></div>
+            <div class="topbar">
+                <div class="actions">
+                    <div class="logo">
                         <a href="index.html" class="logo">JakubWanowski.<span style="color: orange; text-shadow: 1px 1px 0 #333, -1px 1px 0 #333, -1px -1px 0 #333, 1px -1px 0 #333;">pl</span></a>
                     </div>
 
-                    <div id="menu">
+                    <div class="menu">
                         <div class="menu_button" style="width: 170px;">
                             <a href="index.html" class="list_link">Strona główna</a>
                         </div>
@@ -70,105 +72,149 @@
                             <a href="kontakt.html" class="list_link">Kontakt</a>
                         </div> 
 
-                        <div style="clear: both;"/>    
+                        <div style="clear: both;"></div>    
                     </div>
                 </div>    
             </div>
         </div>
-        <div id="middle">
-            <div id="content">
-            <div class="header">Skąd czerpię wiedzę</div>
-            
-            <div class="source">
-                <h4>Dokumentacje</h4>
-                <ul>
-                    <li>
-                        <a href="https://www.w3.org" target="_blank">W3C</a>
-                    </li>
-                    
-                    <li>
-                        <a href="http://en.cppreference.com/w/" target="_blank">cppreference</a>
-                    </li>
-                </ul>
+        
+        <div class="middle">
+            <div class="content">
+                <div class="header">Skąd czerpię wiedzę</div>
+
+                <div class="source">
+                    <h4>Dokumentacje</h4>
+                    <ul>
+                        <li>
+                            <a class="link" href="https://www.w3.org" target="_blank">W3C</a>
+                        </li>
+
+                        <li>
+                            <a class="link" href="http://en.cppreference.com/w/" target="_blank">cppreference</a>
+                        </li>
+
+                        <li>
+                            <a class="link" href="http://jquery.com" target="_blank">jquery.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="source">
+                    <h4>Książki</h4>
+                    <ul>
+                        <li>
+                            <a class="link" href="http://helion.pl/ksiazki/c-przewodnik-dla-poczatkujacych-alex-allain,cppppo.htm" target="_blank">C++. Przewodnik dla początkujących</a>
+                        </li>
+
+                        <li>
+                            <a class="link" href="http://helion.pl/ksiazki/testowanie-oprogramowania-podrecznik-dla-poczatkujacych-rafal-pawlak,szteop.htm" target="_blank">Testowanie oprogramowania. Podręcznik dla początkujących</a>
+                        </li> 
+                    </ul>
+                </div>
+
+                <div class="source">
+                    <h4>Fora</h4>
+                    <ul>
+                        <li>
+                            <a class="link" href="https://stackoverflow.com/" target="_blank">Stack Overflow</a>
+                        </li>
+
+                        <li>
+                            <a class="link" href="http://forum.pasja-informatyki.pl/" target="_blank">Forum Pasja Informatyki</a>
+                        </li>
+
+                        <li>
+                            <a class="link" href="http://4programmers.net" target="_blank">4programers</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="source">
+                    <h4>Portale</h4>
+                    <ul>
+                        <li>
+                            <a class="link" href="http://miroslawzelent.pl/" target="_blank">Blog informatyczny</a>
+                        </li>
+
+                        <li>
+                            <a class="link" href="http://pasja-informatyki.pl/" target="_blank">Pasja informatyki</a>
+                        </li>
+
+                        <li>
+                            <a class="link" href="http://cpp0x.pl" target="_blank">Cpp0x.pl</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="source">
+                    <h4>Kanały na YouTube</h4>
+                    <ul>
+                        <li>
+                            <a class="link" href="https://www.youtube.com/user/MiroslawZelent/featured" target="_blank">Pasja informatyki</a>    
+                        </li>
+
+                        <li>
+                            <a class="link" href="https://www.youtube.com/channel/UCD4EOyXKjfDUhCI6jlOZZYQ" target="_blank">Eli the Computer Guy</a>
+                        </li>
+
+                        <li>
+                            <a class="link" href="https://www.youtube.com/channel/UCas000yWtwjvFzD2zB9Nzmw" target="_blank">CodingMadeEasy</a>
+                        </li>
+
+                        <li>
+                            <a class="link" href="https://www.youtube.com/user/derekbanas/playlists" target="_blank">Derek Banas</a>
+                        </li>
+
+                        <li>
+                           <a class="link" href="https://www.youtube.com/channel/UCbiGcwDWZjz05njNPrJU7jA" target="_blank">ExplainingComputers</a>
+                        </li>
+                    </ul>
+                </div>  
             </div>
-            
-            <div class="source">
-                <h4>Książki</h4>
-                <ul>
-                    <li>
-                        <a href="http://helion.pl/ksiazki/c-przewodnik-dla-poczatkujacych-alex-allain,cppppo.htm" target="_blank">C++. Przewodnik dla początkujących</a>
-                    </li>
-                    
-                    <li>
-                        <a href="http://helion.pl/ksiazki/testowanie-oprogramowania-podrecznik-dla-poczatkujacych-rafal-pawlak,szteop.htm" target="_blank">Testowanie oprogramowania. Podręcznik dla początkujących</a>
-                    </li> 
-                </ul>
-            </div>
-                
-            <div class="source">
-                <h4>Fora</h4>
-                <ul>
-                    <li>
-                        <a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a>
-                    </li>
-                    
-                    <li>
-                        <a href="http://forum.pasja-informatyki.pl/" target="_blank">Forum Pasja Informatyki</a>
-                    </li>
-                    
-                    <li>
-                        <a href="http://4programmers.net" target="_blank">4programers</a>
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="source">
-                <h4>Portale</h4>
-                <ul>
-                    <li>
-                        <a href="http://miroslawzelent.pl/" target="_blank">Blog informatyczny</a>
-                    </li>
-                    
-                    <li>
-                        <a href="http://pasja-informatyki.pl/" target="_blank">Pasja informatyki</a>
-                    </li>
-                    
-                    <li>
-                        <a href="http://cpp0x.pl" target="_blank">Cpp0x.pl</a>
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="source">
-                <h4>Kanały na YouTube</h4>
-                <ul>
-                    <li>
-                        <a href="https://www.youtube.com/user/MiroslawZelent/featured" target="_blank">Pasja informatyki</a>    
-                    </li>
-                    
-                    <li>
-                        <a href="https://www.youtube.com/channel/UCD4EOyXKjfDUhCI6jlOZZYQ" target="_blank">Eli the Computer Guy</a>
-                    </li>
-                    
-                    <li>
-                        <a href="https://www.youtube.com/channel/UCas000yWtwjvFzD2zB9Nzmw" target="_blank">CodingMadeEasy</a>
-                    </li>
-                    
-                    <li>
-                        <a href="https://www.youtube.com/user/derekbanas/playlists" target="_blank">Derek Banas</a>
-                    </li>
-                    
-                    <li>
-                       <a href="https://www.youtube.com/channel/UCbiGcwDWZjz05njNPrJU7jA" target="_blank">ExplainingComputers</a>
-                    </li>
-                </ul>
-            </div>  
         </div>
-        </div>
-        <div id="bottom">
-            <div id="footer">Copyright <span style="font-size: 20px;">&copy;</span> 2016 by Jakub Wanowski</div>
+        
+        <div class="bottom">
+            <div class="footer">Copyright <span style="font-size: 20px;">&copy;</span> 2016 by Jakub Wanowski</div>
         </div>
     </div>
+    
+    
+    <!--jQuery library-->
+    <script src="jquery-3.1.1.min.js"></script>    
+     
+    <!--Function responsible for scrolling timer && topbar-->
+    <!-- Based on episode 3 HTML course miroslawzelent.pl -->
+    <script>
+    
+    $(document).ready(function() 
+    {
+        var NavY = $('.top').offset().top;
+
+        var stickyNav = function()
+        {
+            var ScrollY = $(window).scrollTop();
+
+            if (ScrollY > NavY) 
+            { 
+                $('.top').addClass('sticky');
+                $('.middle').addClass('margin');
+            } 
+            else 
+            {
+                $('.top').removeClass('sticky');
+                $('.middle').removeClass('margin');
+            }
+        };
+
+        stickyNav();
+
+        $(window).scroll(function() 
+        {
+            stickyNav();
+        });
+	});
+	
+    </script>
 </body>
     
 </html>

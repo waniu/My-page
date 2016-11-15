@@ -8,7 +8,9 @@ function start()
 }
 
 
-//SKRYPT NA PODSTAWIE ODINKA 1 KURSU JAVASCRIPT MIROSŁAWA ZELENTA Z PASJA INFORMTYKI
+//TIMER
+//Based on episode 1 JavaScripr course miroslawzelent.pl
+
 function odliczanie()
 {
     var dzisiaj = new Date();        

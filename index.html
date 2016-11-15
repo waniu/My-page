@@ -1,4 +1,4 @@
-<!-- version 1.4 --> 
+<!-- version 1.6 --> 
 
 <!DOCUMENT HTML>
 <html lang="pl">
@@ -24,7 +24,7 @@
     
     <!-- JS -->
     <script type="text/javascript" src="scripts.js"></script>
-
+    
     <!-- Analytics -->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -40,16 +40,18 @@
 </head>
     
 <body>
-    <div id="container">
-        <div id="top">
-            <div id="timer"></div>
-            <div id="topbar">
-                <div id="actions">
-                    <div id="logo">
+    <div class="container">
+        <div style="height: 50px;"></div>
+        
+        <div class="top">
+            <div class="timer" id="timer"></div>
+            <div class="topbar">
+                <div class="actions">
+                    <div class="logo">
                         <a href="index.html" class="logo">JakubWanowski.<span style="color: orange; text-shadow: 1px 1px 0 #333, -1px 1px 0 #333, -1px -1px 0 #333, 1px -1px 0 #333;">pl</span></a>
                     </div>
 
-                    <div id="menu">
+                    <div class="menu">
                         <div class="menu_button" style="width: 170px;">
                             <a href="index.html" class="list_link">Strona główna</a>
                         </div>
@@ -70,13 +72,14 @@
                             <a href="kontakt.html" class="list_link">Kontakt</a>
                         </div> 
 
-                        <div style="clear: both;"/>    
+                        <div style="clear: both;"></div>    
                     </div>
                 </div>    
             </div>
         </div>
-        <div id="middle">
-            <div id="content">
+        
+        <div class="middle">
+            <div class="content">
                 <div class="header">Strona główna</div>
                 <div class="post" style="border: 0; padding-top: 0;" >
                     <div class="title" id="01">
@@ -93,18 +96,65 @@
                             <ul>
                                 <li>O mnie - Trochę informacji o tym kim jestem, czym się zajmuję itp.</li>
 
-                                <li>Projekty - Moje własne produkcje oraz tutoriale, któr wykonałem.</li>
+                                <li>Projekty - Moje własne produkcje oraz tutoriale, któr wykonałem</li>
 
-                                <li>Skąd czerpię wiedzę - Linki i opisy do materiałów, z których się uczę.</li>
+                                <li>Skąd czerpię wiedzę - Linki i opisy do materiałów, z których się uczę</li>
 
                                 <li>Kontakt</li>
 
                             </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post">
+                    <div class="title" id="05">
+                        <div class="data">15.11.2016</div>
+                        Przyklejany pasek menu, czyli zmiany w wersji 1.6
+                    </div>
 
-                        <p>
-                            Stronę w ciągłej budowie :)    
-                        </p>
+                    <div class="post_content">
 
+                        <p>Ten wpis nie będzie w postaci listy, ponieważ zrobiłem tylko jedną, a zarazem, aż jedną rzecz. Postanowiłem do mojej strony dodać przyklejający się do górnej krawędzi ekranu pasek menu.</p>
+                        
+                        <p>Na początku sprawa wydawała się prosta. W końcu tego typu pasek robiłem na kursie CSS, więc cytując mojego ulubionego prezentera programu motoryzacyjnego "How hard can it be?"</p>
+                        
+                        <p>Przekopiowałem interesujący mnie skrypt, podmieniłem właściwe nazwy "divów", odświeżyłem stronę i... lipa! Nie działa! Obejrzałem interesujący mnie odcinek kursu. Powtórzyłem wszystkie instrukcje, a błędów brak. Zauważyłem jednak w trakcie kontroli elementów w przeglądarce, że cała strona siedzi w "divie", który chcę przykleić do ekranu. W edytorze wszystko było na swoim miejscu, a przeglądarka widziała to zupełnie inaczej.</p>
+                        
+                        <p>Tutaj chciałbym się na chwilę zatrzymać, udzielić Ci szczegółowego wyjaśnienia, a nawet pokusić się na danie rady.
+                        <br/><br/>
+                        Jeśli czegoś nie jesteś pewien, SPRAWDŹ W DOKUMENTACJI!!!
+                        <br/><br/>
+                        Moim błędem było zamknięcie "diva" odpowiedzialnego za zakończenie instrukcji "float: left;" układającej menu. Nie wiedzieć czemu stwierdziłem "hmm... skoro tagi "meta" można zamknąć od razu to pewnie "divy", które nie mają zawartości też". Znalezienie tej perełki w kodzie zajęło mi nie mało.</p>
+                        
+                        <p>Z czystym sumieniem mogę jednak stwierdzić, że nie był to czas stracony. Przejrzałem moją stronę z góry na dół. Pozmieniałem chyba wszystko, co się dało w CSS (musiałem to potem odkręcać). Przeanalizowałem cały schemat działania skryptu odpowiedzialnego za przyklejane menu, co mówiąc nieskromnie, pozwoliło mi go odrobinę ulepszyć.</p>
+                        
+                        <p>Obecnie pasek działa i wygląda moim zdaniem całkiem dobrze. Ma kilka błędów niewidocznych na pierwszy rzut oka i jeśli chcesz, możesz ich poszukać, :) kod jest dostępny. Ja jednak nie mogłem wytrzymać, żeby się nie pochwalić nowym wizualnym smaczkiem jeszcze przed ostatnimi poprawkami.</p>
+                        
+                        <p>Obecnie mam w planach jeszcze jedno ulepszenie funkcjonalne. Po nim przyjdzie pora, aby odstawić stronę wizualną i skupić się na treści, uczeniu się nowych rzeczy, zdobywaniu przydatnych umiejętności i powiem szczerze nie mogę się doczekać :)</p>
+                        
+                        <p>PS: Skoro już tak się rozpisałem, to chciałbym podzielić się z Tobą jeszcze jednym spostrzeżeniem, które nasunęło mi się w czasie tworzenia tej strony. Tutoriale Cię nie nauczą. One pokażą Ci jak coś zrobić. Nauczysz się, dopiero gdy oderwiesz się od kopiowania kodu i zaczniesz pisać sam.</p> 
+                    </div>
+                </div>
+                
+                <div class="post">
+                    <div class="title" id="04">
+                        <div class="data">13.11.2016</div>
+                        Zmiany w wersji 1.5
+                    </div>
+
+                    <div class="post_content">
+
+                        <div id="main_list">
+                            <ul>
+                                <li>Zmieniłem wzór linków</li>
+                                
+                                <li>Przerobiłem delikatnie nagłówki zakładek</li>
+                                
+                                <li>W zakładce "O mnie" dodałem informacje na temat mojego sprzętu i oprogramowania, którego używam</li>
+                                
+                                <li>Dodałem mój adres email w zakładce "Kontakt", gdyby ktoś chciał się skontaktować :)</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -135,7 +185,7 @@
                             </ul>
                         </div>
                     </div>
-            </div>
+                </div>
                 
                 <div class="post">
                     <div class="title" id="02">
@@ -169,10 +219,48 @@
             </div>
             </div>
         </div>
-        <div id="bottom">
-            <div id="footer">Copyright <span style="font-size: 20px;">&copy;    </span> 2016 by Jakub Wanowski</div>
+        
+        <div class="bottom">
+            <div class="footer">Copyright <span style="font-size: 20px;">&copy;</span> 2016 by Jakub Wanowski</div>
         </div>      
     </div>
+    
+    <!--jQuery library-->
+    <script src="jquery-3.1.1.min.js"></script>    
+     
+    <!--Function responsible for scrolling timer && topbar-->
+    <!-- Based on episode 3 HTML course miroslawzelent.pl -->
+    <script>
+    
+    $(document).ready(function() 
+    {
+        var NavY = $('.top').offset().top;
+
+        var stickyNav = function()
+        {
+            var ScrollY = $(window).scrollTop();
+
+            if (ScrollY > NavY) 
+            { 
+                $('.top').addClass('sticky');
+                $('.middle').addClass('margin');
+            } 
+            else 
+            {
+                $('.top').removeClass('sticky');
+                $('.middle').removeClass('margin');
+            }
+        };
+
+        stickyNav();
+
+        $(window).scroll(function() 
+        {
+            stickyNav();
+        });
+	});
+	
+    </script>    
 </body>
     
 </html>

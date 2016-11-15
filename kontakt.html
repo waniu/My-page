@@ -1,4 +1,4 @@
-<!-- version 1.4 --> 
+<!-- version 1.6 --> 
 
 <!DOCUMENT HTML>
 <html lang="pl">
@@ -41,15 +41,17 @@
     
 <body>
     <div id="container">
-        <div id="top">
-            <div id="timer"></div>
-            <div id="topbar">
-                <div id="actions">
-                    <div id="logo">
+        <div style="height: 50px;"></div>
+        
+        <div class="top">
+            <div class="timer" id="timer"></div>
+            <div class="topbar">
+                <div class="actions">
+                    <div class="logo">
                         <a href="index.html" class="logo">JakubWanowski.<span style="color: orange; text-shadow: 1px 1px 0 #333, -1px 1px 0 #333, -1px -1px 0 #333, 1px -1px 0 #333;">pl</span></a>
                     </div>
 
-                    <div id="menu">
+                    <div class="menu">
                         <div class="menu_button" style="width: 170px;">
                             <a href="index.html" class="list_link">Strona główna</a>
                         </div>
@@ -70,33 +72,76 @@
                             <a href="kontakt.html" class="list_link">Kontakt</a>
                         </div> 
 
-                        <div style="clear: both;"/>    
+                        <div style="clear: both;"></div>    
                     </div>
                 </div>    
             </div>
         </div>
-        <div id="middle">
-            <div id="content">
+        
+        <div class="middle">
+            <div class="content">
             <div class="header">Kontakt</div>
                 <ul style="text-align: left;">
                     <li>
-                        <a href="https://www.facebook.com/jakubwanowski" class="contact_link" target="_blank">Facebook</a>
+                        jakub.wanowski@gmail.com - adres email
+                    </li>
+                    <br/>
+                    <li>
+                        <a href="https://www.facebook.com/jakubwanowski" class="link" target="_blank">Facebook</a> - profil na Facebooku
                     </li>
                 
                     <li>
-                        <a href="https://github.com/waniu" class="contact_link" target="_blank">GitHub</a>
+                        <a href="https://github.com/waniu" class="link" target="_blank">GitHub</a> - konto na GitHubie
                     </li>
                 
                     <li>
-                        <a href="https://www.linkedin.com/in/jakub-wanowski" class="contact_link" target="_blank">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/jakub-wanowski" class="link" target="_blank">LinkedIn</a> - profil na LinkedIn
                     </li>
-            </ul>
+                </ul>
+            </div>
         </div>
-        </div>
-        <div id="bottom">
-            <div id="footer">Copyright <span style="font-size: 20px;">&copy;</span> 2016 by Jakub Wanowski</div>
+        
+        <div class="bottom">
+            <div class="footer">Copyright <span style="font-size: 20px;">&copy;</span> 2016 by Jakub Wanowski</div>
         </div>   
     </div>
+    
+    <!--jQuery library-->
+    <script src="jquery-3.1.1.min.js"></script>    
+     
+    <!--Function responsible for scrolling timer && topbar-->
+    <!-- Based on episode 3 HTML course miroslawzelent.pl -->
+    <script>
+    
+    $(document).ready(function() 
+    {
+        var NavY = $('.top').offset().top;
+
+        var stickyNav = function()
+        {
+            var ScrollY = $(window).scrollTop();
+
+            if (ScrollY > NavY) 
+            { 
+                $('.top').addClass('sticky');
+                $('.middle').addClass('margin');
+            } 
+            else 
+            {
+                $('.top').removeClass('sticky');
+                $('.middle').removeClass('margin');
+            }
+        };
+
+        stickyNav();
+
+        $(window).scroll(function() 
+        {
+            stickyNav();
+        });
+	});
+	
+    </script>
 </body>
     
 </html>
